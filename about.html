@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Обновлен Title страницы -->
+    <title>О нас - Luxury Drive Collection</title>
+    <!-- Добавляем тег шрифта Poppins -->
+    <link href="fonts.googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="file:///C:/Users/15092024/Desktop/auto_catalog_site/logo.png"> 
+    <!-- Скопированные стили для отображения логотипа и названия, а также для контента "О нас" -->
+    <style>
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .header-logo {
+            height: 60px; /* Размер увеличен */
+            margin-right: 20px;
+        }
+        /* --- ОБНОВЛЕННЫЙ СТИЛЬ: Название сайта с новым шрифтом --- */
+        .header-title {
+            margin: 0;
+            font-size: 1.2em;
+            color: #FFFFFF;
+            font-weight: 600;
+            white-space: nowrap;
+            /* --- НОВОЕ: Меняем шрифт названия сайта --- */
+            font-family: 'Times New Roman', Times, serif; 
+        }
+
+        /* Выделение активной ссылки в навигации */
+        .nav-active {
+            font-weight: bold;
+            color: #007BFF; /* Или любой другой цвет */
+        }
+
+        /* --- Стили для раздела "О нас" (добавлены из предыдущих ответов) --- */
+        .about-us-section h1 {
+            color: #ab73f5;
+            border-bottom: 2px solid #8d4299;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .mission-vision {
+            background-color: rgba(51, 26, 77, 0.6);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #ab73f5;
+        }
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        .stat-card {
+            flex: 1;
+            min-width: 150px;
+            background: rgba(85, 21, 125, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .stat-card h3 {
+            color: #FFFFFF;
+            font-size: 2.5em;
+            margin: 0 0 10px 0;
+        }
+        .stat-card p {
+            color: #ab73f5;
+            margin: 0;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. Оборачиваем все содержимое в div с классом site-wrapper -->
+    <div class="site-wrapper"> 
+        
+        <header>
+            <div class="container">
+                <!-- Заменили h1 на контейнер с логотипом и названием -->
+                <div class="header-logo-container">
+                    <img src="logo.png" alt="Логотип Luxury Drive Collection" class="header-logo">
+                    <span class="header-title">Luxury Drive Collection</span>
+                </div>
+                
+                <nav>
+                    <a href="index.html">Каталог</a>
+                    <!-- Выделяем активную ссылку "О нас" -->
+                    <a href="about.html" class="nav-active">О нас</a>
+                    <a href="contacts.html">Контакты</a>
+                    <a href="login.html">Авторизация</a>
+                    <a href="register.html">Регистрация</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- 2. Добавляем класс "content" к основному блоку -->
+        <main class="container content about-us-section">
+            <h2>Информация о сайте</h2>
+            <p>
+               Luxury Drive Collection — это не просто каталог. Это цифровой портал, созданный для того, чтобы стереть границы между реальностью и мечтой о безупречном автомобиле.
+Мы представляем коллекцию, где каждый экземпляр — отточенный шедевр инженерной мысли и дизайна. Наша миссия — предложить вам не просто транспортное средство, а ключ к миру, где время измеряется не часами в пробках, а чистым удовольствием от вождения и беспрецедентным комфортом.
+Погрузитесь в атмосферу, где сходятся элегантность бизнес-класса и захватывающая роскошь премиум-сегмента.
+            </p>
+ 
+            
+            <div class="mission-vision">
+                <h2>Наша Миссия</h2>
+                <p>Предоставлять клиентам только проверенные автомобили высшего качества, обеспечивая при этом сервис мирового уровня и полную поддержку на всех этапах сделки.</p>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-card">
+                    <h3>500+</h3>
+                    <p>Довольных клиентов</p>
+                </div>
+                <div class="stat-card">
+                    <h3>12</h3>
+                    <p>Лет на рынке</p>
+                </div>
+                <div class="stat-card">
+                    <h3>#1</h3>
+                    <p>Рейтинг надежности</p>
+                </div>
+            </div>
+            
+        </main>
+
+        <footer>
+            <!-- Добавлено название сайта в футер -->
+            <p>&copy; 2025 Luxury Drive Collection</p>
+        </footer>
+
+    </div> <!-- 3. Закрываем site-wrapper здесь -->
+
+</body>
+</html>
